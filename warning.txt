@@ -1,0 +1,6 @@
+1. 在loss.py中，默认设置GPU=True, 如果需要在CPU中运行，注意修改。同样，在trainer.py中，注意self.data = imgs
+        self.target = pids
+
+2. 如果loss值出现inf，则在tripletLoss中，强制归化到loss=20.0
+
+
